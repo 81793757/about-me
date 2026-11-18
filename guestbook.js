@@ -3,7 +3,7 @@
 // 1. Supabase 연결
 // ===================================
 
-const SUPABASE_URL = "https://xgtayflyjvfrardjuyao.supabase.co/rest/v1/";
+const SUPABASE_URL = "https://xgtayflyjvfrardjuyao.supabase.co";
 const SUPABASE_KEY = "sb_publishable__GHFHwEcFohwLf-I_ftbtA_gdAB4t6t";
 
 const db = window.supabase.createClient(
