@@ -121,6 +121,65 @@
         </div>
     </section>
 
+<section class="guestbook">
+  <h2>Guestbook ✍️</h2>
+  <p>방문해 주셔서 감사합니다!</p>
+
+  <form id="guestbook-form">
+    <input
+      type="text"
+      id="guest-name"
+      placeholder="닉네임"
+      maxlength="30"
+      required
+    >
+
+    <textarea
+      id="guest-message"
+      placeholder="메시지를 남겨주세요."
+      maxlength="500"
+      required
+    ></textarea>
+
+    <button type="submit">방명록 남기기</button>
+  </form>
+
+  <p id="guestbook-status" aria-live="polite"></p>
+
+  <div id="guestbook-list"></div>
+</section>
+
+<!-- 관리자 로그인 -->
+<section class="admin-section">
+  <h3>관리자</h3>
+  <form id="admin-login-form">
+    <input
+      type="email"
+      id="admin-email"
+      placeholder="관리자 이메일"
+      required
+    >
+    <input
+      type="password"
+      id="admin-password"
+      placeholder="관리자 비밀번호"
+      required
+    >
+    <button type="submit">관리자 로그인</button>
+  </form>
+
+  <button id="admin-logout" hidden>로그아웃</button>
+  <p id="admin-status" aria-live="polite"></p>
+</section>
+
+<!-- Supabase 라이브러리 -->
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+<!-- 방명록 JavaScript -->
+<script src="./guestbook.js"></script>
+
+
+    
     <!-- 푸터 -->
     <footer>
         <p>&copy; 2026 Gildong Hong. All rights reserved.</p>
