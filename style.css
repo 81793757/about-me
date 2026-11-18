@@ -294,6 +294,7 @@ section h2 {
   cursor: pointer;
 }
 
+
 #guestbook-list {
   display: flex;
   flex-direction: column;
@@ -306,14 +307,16 @@ section h2 {
   border: 1px solid #eee;
   border-radius: 10px;
   background: #fff;
+  color: #333333;
 }
 
 .guestbook-item .guest-name {
   font-weight: bold;
+  color: #222222;
 }
 
 .guestbook-item .guest-date {
-  color: #888;
+  color: #888888;
   font-size: 12px;
 }
 
@@ -321,6 +324,7 @@ section h2 {
   white-space: pre-wrap;
   overflow-wrap: anywhere;
   margin-top: 12px;
+  color: #333333;
 }
 
 .delete-button {
